@@ -27,16 +27,24 @@
 <body>
 
 <script>
-  const btn = document.getElementById('btn');
-  
-  btn.addEventListener('click', function onClick() {
-    btn.style.backgroundColor = 'salmon';
-    btn.style.color = 'green';
+const header = document.querySelector("#boxDIV, box-rating");
+
+header.addEventListener('click', event => {
+  if (event.target.className === 'button') {
+    let activeButton = header.querySelector('.btn[data-active="active"]');
+    const currentState = event.target.dataset.active;
+    
+    if (activeButton && activeButton !== event.target ) {
+      activeButton.dataset.active = null;
+    }
+    
+    event.target.dataset.active = currentState === 'active' ? null : 'active';
   }
+});
 </script>
 
   <!-- Rating state start -->
-<div class="box-rating">
+<div id="boxDIV" class="box-rating">
   <img src="/images/icon-star.svg" alt="star icon" class="star">
   
   <h1 class="text">How did we do?</h1>
@@ -44,7 +52,13 @@
   <p class="text">Please let us know how we did with your support request. All feedback is appreciated 
   to help us improve our offering!</p>
 
-  <p class="text"><button id="btn" onclick="ratingSelect()" style="margin-left: 0px;">1</button><button> 2 </button><button>3</button><button>4</button><button style="margin-right: 0px;">5</button> </p>
+  <p class="text">
+    <button class="btn" style="margin-left: 0px;">1</button>
+    <button class="btn">2</button>
+    <button class="btn">3</button>
+    <button class="btn">4</button>
+    <button class="btn" style="margin-right: 0px;" >5</button>
+  </p>
 
   <h4 class="text submit-button">SUBMIT</h4>
 </div>

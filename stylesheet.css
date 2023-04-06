@@ -35,28 +35,31 @@ p {
     position: top left;
 }
 
-button {
+.btn {
     color: hsl(217, 12%, 63%);
     border-radius: 50%;
     background-color: hsl(216, 8%, 25%);
     padding: 15px 20px;
-    margin: 0.871em;
+    margin: 0.7em;
     border-style: none;
     border-width: 0px;
     cursor: pointer;
 }
 
-button:hover {
+.btn:hover {
     color: hsl(0, 0%, 100%);
     border-radius: 50%;
     background-color: hsl(25, 97%, 53%);
     padding: 15px 20px;
-    margin: 0.871em;
+    margin: 0.7em;
     border-style: none;
     border-width: 0px;
 }
 
-
+.btn[data-active="active"] {
+    background-color:hsl(217, 12%, 63%);
+    color:hsl(0, 0%, 100%);
+}
 
 h4 {
     text-align: center;
