@@ -1,11 +1,12 @@
 .box-rating {
     text-align: left;
     width: 21em;
-    margin: auto;
+    margin: auto auto 5px auto;
     background-color: hsl(213, 19%, 18%);
     border-radius: 20px;
     padding: 1.5em;
     height: 21em;
+
 }
 
 body {
@@ -33,6 +34,11 @@ p {
     background-color: hsl(216, 8%, 25%);
     padding: 17px;
     position: top left;
+}
+
+button {
+    border-style: none;
+    border-width: 0px;
 }
 
 .btn {
@@ -79,18 +85,19 @@ h4 {
     background-color: hsl(25, 97%, 53%);
     border-radius: 20px;
     padding: 8px;
-    width: 20em;
+    width: 25em;
     margin: auto;
     letter-spacing: 2px;
+    cursor: pointer;
 }
 
-h4.submit-button:hover {
+.submit-button:hover {
     text-align: center;
     color: hsl(25, 97%, 53%);
     background-color: hsl(0, 0%, 100%);
     border-radius: 20px;
     padding: 8px;
-    width: 20em;
+    width: 25em;
     margin: auto;
     letter-spacing: 2px;
 }
@@ -103,6 +110,7 @@ h4.submit-button:hover {
     border-radius: 20px;
     padding: 1.5em;
     height: 20em;
+    display:none;
 }
 
 .thx{
