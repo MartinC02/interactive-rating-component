@@ -25,24 +25,6 @@
 </head>
 
 <body>
-
-<script>
-const header = document.querySelector("#boxDIV, box-rating");
-
-header.addEventListener('click', event => {
-  if (event.target.className === 'button') {
-    let activeButton = header.querySelector('.btn[data-active="active"]');
-    const currentState = event.target.dataset.active;
-    
-    if (activeButton && activeButton !== event.target ) {
-      activeButton.dataset.active = null;
-    }
-    
-    event.target.dataset.active = currentState === 'active' ? null : 'active';
-  }
-});
-</script>
-
   <!-- Rating state start -->
 <div id="boxDIV" class="box-rating">
   <img src="/images/icon-star.svg" alt="star icon" class="star">
@@ -81,5 +63,21 @@ header.addEventListener('click', event => {
     Challenge by <a href="https://www.frontendmentor.io?ref=challenge" target="_blank">Frontend Mentor</a>. 
     Coded by <a href="#">Martin Carlsen</a>.
   </div>
+  <script>
+    const header = document.querySelector("#boxDIV");
+    
+    header.addEventListener("click", event => {
+      if (event.target.tagName == 'BUTTON') {
+        let activeButton = header.querySelector('.btn[data-active="active"]');
+        const currentState = event.target.dataset.active;
+        
+        if (activeButton && activeButton !== event.target ) {
+          activeButton.dataset.active = null;
+        }
+        
+        event.target.dataset.active = currentState === 'active' ? null : 'active';
+      }
+    });
+    </script>
 </body>
 </html>
