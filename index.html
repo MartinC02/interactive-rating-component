@@ -19,15 +19,22 @@
 
   <!-- Feel free to remove these styles or customise in your own stylesheet 👍 -->
   <style>
-    .attribution { font-size: 11px; text-align: center; }
+    .attribution { font-size: 11px; text-align: center; color: white}
     .attribution a { color: hsl(228, 45%, 44%); }
   </style>
 </head>
 
 <body>
-<script>
 
+<script>
+  const btn = document.getElementById('btn');
+  
+  btn.addEventListener('click', function onClick() {
+    btn.style.backgroundColor = 'salmon';
+    btn.style.color = 'green';
+  }
 </script>
+
   <!-- Rating state start -->
 <div class="box-rating">
   <img src="/images/icon-star.svg" alt="star icon" class="star">
@@ -37,11 +44,12 @@
   <p class="text">Please let us know how we did with your support request. All feedback is appreciated 
   to help us improve our offering!</p>
 
-  <p class="text"><button style="margin-left: 0px;">1</button><button> 2 </button><button>3</button><button>4</button><button style="margin-right: 0px;">5</button> </p>
+  <p class="text"><button id="btn" onclick="ratingSelect()" style="margin-left: 0px;">1</button><button> 2 </button><button>3</button><button>4</button><button style="margin-right: 0px;">5</button> </p>
 
   <h4 class="text submit-button">SUBMIT</h4>
 </div>
   <!-- Rating state end -->
+
 <div class="box-thx">
   <!-- Thank you state start -->
   <img src="images/illustration-thank-you.svg" alt="thank you" class="thx">
