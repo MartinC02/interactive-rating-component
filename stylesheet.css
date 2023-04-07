@@ -107,4 +107,7 @@ button {
     .box-rating {
         width:90vw;
     }
+    .submit-button {
+        width: 80vw;
+    }
 }
