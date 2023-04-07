@@ -1,12 +1,11 @@
 .box-rating {
     text-align: left;
     width: 21em;
-    margin: auto auto 5px auto;
+    margin: auto auto 0.3em auto;
     background-color: hsl(213, 19%, 18%);
-    border-radius: 20px;
+    border-radius: 1.5em;
     padding: 1.5em;
     height: 21em;
-
 }
 
 body {
@@ -32,7 +31,7 @@ p {
 .star {
     border-radius: 45%;
     background-color: hsl(216, 8%, 25%);
-    padding: 17px;
+    padding: 1em;
     position: top left;
 }
 
@@ -45,7 +44,7 @@ button {
     color: hsl(217, 12%, 63%);
     border-radius: 50%;
     background-color: hsl(216, 8%, 25%);
-    padding: 15px 20px;
+    padding: 1.2em 1.53em;
     margin: 0.7em;
     border-style: none;
     border-width: 0px;
@@ -54,12 +53,7 @@ button {
 
 .btn:hover {
     color: hsl(0, 0%, 100%);
-    border-radius: 50%;
     background-color: hsl(25, 97%, 53%);
-    padding: 15px 20px;
-    margin: 0.7em;
-    border-style: none;
-    border-width: 0px;
 }
 
 .btn[data-active="active"] {
@@ -67,47 +61,29 @@ button {
     color:hsl(0, 0%, 100%);
 }
 
-h4 {
-    text-align: center;
-    color: hsl(0, 0%, 100%);
-    background-color: hsl(25, 97%, 53%);
-    border-radius: 20px;
-    padding: 8px;
-    width: 20em;
-    margin: auto;
-    letter-spacing: 2px;
-    cursor: pointer;
-}
-
 .submit-button {
     text-align: center;
     color: hsl(0, 0%, 100%);
     background-color: hsl(25, 97%, 53%);
-    border-radius: 20px;
-    padding: 8px;
+    border-radius: 2em;
+    padding: 0.75em 0.6em 0.6em 0.6em;
     width: 25em;
     margin: auto;
-    letter-spacing: 2px;
+    letter-spacing: 0.2em;
     cursor: pointer;
 }
 
 .submit-button:hover {
-    text-align: center;
     color: hsl(25, 97%, 53%);
     background-color: hsl(0, 0%, 100%);
-    border-radius: 20px;
-    padding: 8px;
-    width: 25em;
-    margin: auto;
-    letter-spacing: 2px;
 }
 
 .box-thx {
     text-align: center;
     width: 21em;
-    margin: auto auto 5px auto;
+    margin: auto auto 0.3em auto;
     background-color: hsl(213, 19%, 18%);
-    border-radius: 20px;
+    border-radius: 1.5em;
     padding: 1.5em;
     height: 21em;
     display:none;
@@ -115,14 +91,14 @@ h4 {
 
 .thx{
     margin-bottom: 2em;
-    width: 40%;
+    width: 50%;
 }
 
 .rating {
     color:hsl(25, 97%, 53%);
     background-color: hsl(216, 8%, 25%);
-    border-radius: 20px;
-    padding: 7px;
+    border-radius: 1.3em;
+    padding: 0.55em 0em 0.4em 0em;
     width: 13.5em;
     margin: auto;
 }
