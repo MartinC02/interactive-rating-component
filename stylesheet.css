@@ -1,7 +1,7 @@
 .box-rating {
     text-align: left;
     width: 21rem;
-    margin: auto auto 0.3rem auto;
+    margin: 15rem auto 0.3rem auto;
     background-color: hsl(213, 19%, 18%);
     border-radius: 1.5rem;
     padding: 1.5rem;
@@ -83,7 +83,7 @@ button {
 .box-thx {
     text-align: center;
     width: 21rem;
-    margin: auto auto 0.3rem auto;
+    margin: 15rem auto 0.3rem auto;
     background-color: hsl(213, 19%, 18%);
     border-radius: 1.5rem;
     padding: 1.5rem;
